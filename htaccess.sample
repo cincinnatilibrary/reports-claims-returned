@@ -1,0 +1,5 @@
+SetEnv DB_HOST sierra-db.library.org
+SetEnv DB_PORT 1032
+SetEnv DB_NAME iii
+SetEnv DB_USER USERNAME_HERE
+SetEnv DB_PASSWORD PASSWORD_HERE
