@@ -200,6 +200,42 @@ function makeTablePrintable(tableId){
 <body>
 <h2><?= htmlspecialchars($page_title) ?></h2>
 
+<p>This is a cumulative list of items marked as <strong>Claims Returned</strong> in the past 14 days.</p>
+
+    <ul>
+        <li>
+            <strong>Search for items:</strong>
+            <ul>
+                <li>Check the normal shelving locations.</li>
+                <li>Check other sections where the item might have been shelved incorrectly
+                    (Ex. an adult non-fiction item may be in the juvenile non-fiction section)
+                </li>
+            </ul>
+        </li>
+        <li>
+            <strong>If an item is found:</strong>
+            <ul>
+                <li>Check it in so it appears as available in Sierra.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>If an item is not found:</strong>
+            <ul>
+                <li>Take no action.</li>
+                <li><strong>Do not edit the item status</strong> (e.g., do not mark as missing or withdrawn).</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p><strong>Important: Item status should NOT be edited (do not change to Missing/Withdrawn).</strong></p> 
+    
+    <p>
+        If items are edited, this breaks the Claims Returned link and notes on item and user
+        records will not be removed if the item is ever checked in. The user is 
+        still being held responsible for the items.
+    </p>
+    <hr/>
+
 <form method="get">
   <label>Choose a branch:
     <select name="branch" onchange="this.form.submit()">
